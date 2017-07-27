@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Animated, Easing } from 'react-native';
 import FadeInView from './FadeInView.js';
+import BounceElement from './BounceElement.js';
 
 export default class Splash extends React.Component {
     render() {
@@ -20,7 +21,9 @@ export default class Splash extends React.Component {
                     />
                 </FadeInView>
 
-                <Text style={styles.titlePage}>Hello!</Text>
+                <BounceElement style={styles.container}>
+                    <Text style={styles.titlePage}>Hello!</Text>
+                </BounceElement>
 
             </View>
         );
